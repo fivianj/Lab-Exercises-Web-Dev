@@ -7,25 +7,42 @@
   </head>
   <body>
     <form>
-      Name:<br />
-      <input type="text" name="name" /><br /><br />
-      Address:<br />
-      <input type="text" name="address" />
+      <label for='name'>Name:</label>
+      <br />
+      <input type="text" name="name" id="name" />
       <br /><br />
-      City:<br />
-      <input type="text" name="city" />
+      
+      <label for="address">Address:</label>
+      <br />
+      <input type="text" name="address" id="address" />
       <br /><br />
-      Zip Code:<br />
-      <input type="text" name="zip" />
+
+      <label for="city">City</label><br />
+      <input type="text" name="city" id="city" />
       <br /><br />
-      Credit Card Type:<br />
-      <input type="radio" name="card" value="visa" /> Visa<br />
-      <input type="radio" name="card" value="mastercard" /> MasterCard<br />
-      <input type="radio" name="card" value="amex" /> American Express<br /><br />
-      Credit Card Number:<br />
-      <input type="text" name="cc_number" /><br /><br />
-      CVC:<br />
-      <input type="text" name="cvv" /><br /><br />
+
+      <label for="zip">Zip:</label>
+      <br />
+      <input type="text" name="zip" id="zip" />
+      <br /><br />
+      
+      <fieldset>
+        <label for="card">
+          <legend>Credit card Type:</legend>
+        </label>
+        <br />
+        <input type="radio" name="card" value="visa" id="card"/> Visa<br />
+        <input type="radio" name="card" value="mastercard" id="card"/> MasterCard<br />
+        <input type="radio" name="card" value="amex" id="card"/> American Express<br /><br />
+      </fieldset>
+      <label for="cardNumber">Credit Card Number:</label>
+      <br />
+      <input type="text" name="cc_number" id="cardNumber" /><br /><br />
+      
+      <label for="cvc">CVC:</label>
+      <br />
+      <input type="text" name="cvv" id="cvc"/><br /><br />
+
       <input type="button" value="Submit" />
     </form>
   </body>
