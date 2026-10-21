@@ -1,1 +1,87 @@
 /* Add your CSS code here  */
+:root {
+  --ice-blue-juvie: #8fbcd4;
+  --gothic-gray-blue: #6f8796;
+  --dark-slate-infinity: #1f2a33;
+  --light-slate-gray: #cccccc;
+}
+
+body
+{
+    top:0px;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Arial', sans-serif;
+}
+
+
+h1,h2,.nav > a
+{
+    font-family: 'Cinzel', serif;
+}
+
+/*Nav Bar ----------------------------*/
+.nav
+{
+    background-color: var(--dark-slate-infinity);
+    text-align: center;
+    margin: 0px;
+    padding: 20px;
+    text-decoration: none;
+}
+
+.nav > li
+{
+    display: inline;
+}
+
+.nav > li > a
+{
+    padding: 1rem;
+    color: var(--ice-blue-juvie);
+    text-decoration: none;
+}
+/*------------------------------------*/
+
+h1
+{
+    color: var(--ice-blue-juvie);
+    text-align: center;
+    font-size: 2.25rem;
+}
+
+#books, #covers
+{
+    padding-left: 30px;
+}
+#books > h2, #covers > h2
+{
+    margin-bottom: 2px;
+}
+#books ul li
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /*Need to move to left more*/
+}
+
+#covers > .img-container
+{
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 10px;
+    transform: transform scale(1.2);
+}
+
+#covers > .img-container > img:hover
+{
+    transform: scale(1.2);
+}
+
+/*Divider Bar*/
+.bar
+{
+    height: 1px;
+    background-color: var(--light-slate-gray);
+    margin-bottom: 5px;
+}
