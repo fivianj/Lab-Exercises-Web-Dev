@@ -1,0 +1,135 @@
+/* Add your CSS code here  */
+:root {
+  --ice-blue-juvie: #8fbcd4;
+  --gothic-gray-blue: #6f8796;
+  --dark-slate-infinity: #1f2a33;
+  --light-slate-gray: #cccccc;
+  --dark-slate-gray: #f0f0f0;
+}
+
+body
+{
+    top:0px;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Arial', sans-serif;
+}
+
+
+h1,h2,.nav
+{
+    font-family: 'Cinzel', serif;
+}
+
+/*Nav Bar ----------------------------*/
+.nav
+{
+    background-color: var(--dark-slate-infinity);
+    text-align: center;
+    margin: 0px;
+    border:var(--dark-slate-infinity) 20px solid;
+    padding: 0px;
+    text-decoration: none;
+}
+
+.nav > li > a:hover
+{
+    border-radius: 5px;
+    background-color: var(--ice-blue-juvie);
+    color: var(--dark-slate-infinity);
+}
+
+.nav > li
+{
+    display: inline;
+}
+
+.nav > li > a
+{   
+    font-size: 1.1rem;
+    margin: 0px 30px 0px 30px;
+    color: var(--ice-blue-juvie);
+    padding: 3px;
+    text-decoration: none;
+}
+/*------------------------------------*/
+
+h1
+{
+    color: var(--ice-blue-juvie);
+    text-align: center;
+    font-size: 2.6rem;
+    padding:10px;
+}
+
+#books, #covers, #characters
+{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#books > h2, #covers > h2, #characters > h2
+{
+    font-size: 1.75rem;
+    margin-bottom: 2px;
+}
+
+#books ul li
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#covers > .img-container
+{
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+img{
+    
+    width: 29vw;
+    aspect-ratio: 1/1.44;
+    margin: 10px;
+    /*Add a transition effect for smooth scaling on hover*/
+    transition: transform 0.2s ease-in-out;
+    border-radius: 8px;
+}
+
+#covers > .img-container > img:hover
+{
+    transform: scale(1.1);
+}
+
+#characters th, #characters tr:nth-child(even)
+{
+    background-color: var(--dark-slate-gray);
+}
+
+#characters table, th, td
+{
+    border-collapse: collapse;
+    border: 2px solid var(--light-slate-gray);
+    padding: 10px;
+}
+
+#characters th
+{
+    font-weight: bold;
+}
+#characters table
+{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 15px;
+}
+
+/*Divider Bar*/
+.bar
+{
+    height: 1px;
+    background-color: var(--light-slate-gray);
+    margin-bottom: 5px;
+}

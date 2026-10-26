@@ -1,0 +1,118 @@
+
+:root {
+  --purple: #800080;
+  --light-text-color: #fefefe;
+  --black: #000;
+  --green: #65c84b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000;
+}
+
+.top-of-page {
+  background-color: var(--black);
+  color: var(--light-text-color);
+  padding: 20px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+
+.top-of-page h1 {
+  margin: 0;
+  font-size: 2.25rem;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+}
+
+.navigation a {
+  color: var(--light-text-color);
+  text-decoration: none;
+  font-size: 1.4rem;
+  padding: 8px 0 5px;
+  border-bottom: 4px solid transparent;
+  white-space: nowrap;
+}
+
+.navigation a:hover
+{
+  color: var(--green);
+  border-bottom-color: var(--green);
+}
+
+.main-area {
+  display: flex;
+  justify-content: space-between;
+  gap: 44px;
+  padding: 42px 5.1% 22px;
+}
+
+.page-area {
+  flex: 1;
+  min-width: 0;
+  border: 1px solid #222;
+  border-radius: 13px;
+  padding: 24px 23px;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-area h2 {
+  font-size: 1.7rem;
+  margin: 20px 0;
+}
+
+.page-area p {
+  font-size: 1.15rem;
+  line-height: 1.15;
+  margin: 0 0 16px;
+}
+
+.page-area figure {
+  margin: auto 0 0;
+  padding-top: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page-area img {
+  display: block;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  max-height: 340px;
+  object-fit: contain;
+}
+
+.page-area figcaption {
+  font-size: 1.1rem;
+  margin-top: 12px;
+  margin-bottom: 4px;
+}
+
+/* Footer */
+.bottom-of-page {
+  background-color: var(--black);
+  color: var(--light-text-color);
+  text-align: center;
+  padding: 18px 10px;
+}
+
+.bottom-of-page p {
+  margin: 16px 0;
+  font-size: 1.1rem;
+}
